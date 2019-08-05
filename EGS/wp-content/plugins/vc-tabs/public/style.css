@@ -1,0 +1,13 @@
+.oxi-addons-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.ctu-ultimate-wrapper{   
+    width: 100%;
+    float: left;    
+}
+.ctu-ultimate-wrapper img{
+    height: auto;
+    max-width: 100%;
+}
