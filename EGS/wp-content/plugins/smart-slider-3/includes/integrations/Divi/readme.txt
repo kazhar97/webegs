@@ -1,2 +1,2 @@
-Compile:
+Compile:
 divi-scripts build

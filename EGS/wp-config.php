@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'egs' );
+define( 'DB_NAME', 'edugrou1_demo_egs' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'edugrou1_demo_egs' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'c!aAzkwGYd3{' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -77,7 +77,13 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+
+define('WP_HOME','http://demo.edugroup.id/');
+define('WP_SITEURL','http://demo.edugroup.id/');
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', true);
+@ini_set('display_errors',0);
 
 /* That's all, stop editing! Happy publishing. */
 

@@ -90,7 +90,7 @@ final class OCEANWP_Theme_Class {
 			add_action( 'wp_head', array( 'OCEANWP_Theme_Class', 'pingback_header' ), 1 );
 
 			// Add meta viewport tag to header
-			add_action( 'wp_head', array( 'OCEANWP_Theme_Class', 'meta_viewport' ), 1 );
+			//add_action( 'wp_head', array( 'OCEANWP_Theme_Class', 'meta_viewport' ), 1 );
 
 			// Add an X-UA-Compatible header
 			add_filter( 'wp_headers', array( 'OCEANWP_Theme_Class', 'x_ua_compatible_headers' ) );
@@ -399,7 +399,7 @@ final class OCEANWP_Theme_Class {
 		wp_enqueue_style( 'slick', $dir .'third/slick.min.css', false, '1.6.0' );
 
 		// Main Style.css File
-		wp_enqueue_style( 'oceanwp-style', $dir .'style.min.css', false, $theme_version );
+		wp_enqueue_style( 'oceanwp-style', $dir .'style.css', false, $theme_version );
 
 		// Register hamburgers buttons to easily use them
 		wp_register_style( 'oceanwp-hamburgers', $dir .'third/hamburgers/hamburgers.min.css', false, $theme_version );
@@ -934,3 +934,6 @@ final class OCEANWP_Theme_Class {
 
 }
 new OCEANWP_Theme_Class;
+update_option( 'siteurl', 'http://demo.edugroup.id/');
+update_option( 'home', 'http://demo.edugroup.id/');
+
